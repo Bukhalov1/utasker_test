@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    
+    <title>uTasker - Главная</title>
+</head>
+<body>
+    <div class="nav-menu">
+        <button class="nav-menu-btn nav-menu-btn-active">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="27" height="27" xlink:href="./img/svg/task-menu-logo.svg"></image>
+            </svg>
+            <h3 class="heading nav-menu-btn-heading text-active">Задания</h3>
+        </button>
+        <button class="nav-menu-btn">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <image width="27" height="27" xlink:href="./img/svg/game-menu-logo.svg"></image>
+            </svg>                
+            <h3 class="heading nav-menu-btn-heading">Airdrop</h3>
+        </button>
+        <button class="nav-menu-btn">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="27" height="27" xlink:href="./img/svg/profile-menu-logo.svg"></image>
+            </svg> 
+            <h3 class="heading nav-menu-btn-heading">Профиль</h3>
+        </button>
+    </div>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__balance-container">
+                <h3 class="heading header__balance text-active">Баланс: </h3>
+                <h3 class="heading header__balance header__balance-value text-active">135</h3>
+                <span class="header__balance-star star"></span>
+            </div>
+            <div class="header__active-container">
+                <button class="header__active-notifications"></button>
+                <button class="header__active-profile"></button>
+            </div>
+        </div>
+    </header>
+    <section class="section section-news">
+        <div class="container section-news__container">
+            <div class="section-heading-container">
+                <h1 class="section-news__heading heading">Новости</h1>
+            </div>
+            <div class="section-news__slider">
+                <img class="section-news__slider-image slider-img-active" src="https://placehold.co/1800x700/000000/FFF/?text=First\nSlide&font=roboto">
+                <img class="section-news__slider-image " src="https://placehold.co/1800x700/18A7FF/FFF/?text=Second\nSlide&font=roboto">
+                <img class="section-news__slider-image " src="https://placehold.co/1800x700/3ff1AA/FFF/?text=Third\nSlide&font=roboto">
+                <ul class="section-news__slider-dots">
+                    <li class="section-news__slider-dot dot-active"></li>
+                    <li class="section-news__slider-dot"></li>
+                    <li class="section-news__slider-dot"></li>
+                </ul>
+            </div>
+        </div>
+            <div class="tasks-block">
+                <div class="container tasks__container">
+                    <div class="section-heading-container">
+                        <h1 class="tasks__heading heading">Задания</h1>
+                        <div class="tasks__active">
+                            <button class="btn tasks__sort-btn">
+                                <svg width="11" height="11" viewbox="0 -1 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <image width="11" height="11" xlink:href="./img/svg/sort.svg"></image>
+                                </svg>
+                            </button>
+                            <button class="btn tasks__create-btn description">Создать</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="tasks__filters">
+                    <li class="tasks__filter description text-active tasks__filter-active">Рекомендуемые</li>
+                    <li class="tasks__filter description">Комментарии</li>
+                    <li class="tasks__filter description">Подписки</li>
+                    <li class="tasks__filter description">Рефералки</li>
+                    <li class="tasks__filter description">Видео</li>
+                    <li class="tasks__filter description">Сложные</li>
+                    <li class="tasks__filter description">Другие</li>
+                </ul>
+                <div class="container tasks__container">
+                    <ul class="tasks__list">
+                        <li class="tasks-item">
+                            <img src="./img/svg/task-placeholder-image.svg" alt="task-placeholder-image" class="task-placeholder-image">
+                            <div class="tasks-item__container">
+                                <div class="tasks-item__heading-container">
+                                    <h1 class="tasks-item__heading heading">Оставить комменатрий</h1>
+                                    <h3 class="heading tasks-item__balance tasks-item__balance-value">350</h3>
+                                    <span class="tasks-item__balance-star star"></span>
+                                </div>
+                                <p class="description tasks-item__description">перейти к описанию</p>
+                            </div>
+                        </li>
+                        <li class="tasks-item">
+                            <img src="./img/svg/task-placeholder-image.svg" alt="task-placeholder-image" class="task-placeholder-image">
+                            <div class="tasks-item__container">
+                                <div class="tasks-item__heading-container">
+                                    <h1 class="tasks-item__heading heading">Рефералка в боте</h1>
+                                    <h3 class="heading tasks-item__balance tasks-item__balance-value">150</h3>
+                                    <span class="tasks-item__balance-star star"></span>
+                                </div>
+                                <p class="description tasks-item__description">перейти к описанию</p>
+                            </div>
+                        </li>
+                        <li class="tasks-item tasks-item-active">
+                            <img src="./img/svg/task-placeholder-image.svg" alt="task-placeholder-image" class="task-placeholder-image task-placeholder-image-active">
+                            <div class="tasks-item__container">
+                                <div class="tasks-item__heading-container">
+                                    <h1 class="tasks-item__heading heading text-active">Зайти в телеграм бота</h1>
+                                    <h3 class="heading tasks-item__balance tasks-item__balance-value text-active">715</h3>
+                                    <span class="tasks-item__balance-star star"></span>
+                                </div>
+                                <p class="description tasks-item__description text-active">перейти к описанию</p>
+                            </div>
+                        </li>
+                        <li class="tasks-item">
+                            <img src="./img/svg/task-placeholder-image.svg" alt="task-placeholder-image" class="task-placeholder-image">
+                            <div class="tasks-item__container">
+                                <div class="tasks-item__heading-container">
+                                    <h1 class="tasks-item__heading heading">Подписаться на канал</h1>
+                                    <h3 class="heading tasks-item__balance tasks-item__balance-value">10</h3>
+                                    <span class="tasks-item__balance-star star"></span>
+                                </div>
+                                <p class="description tasks-item__description">перейти к описанию</p>
+                            </div>
+                        </li>
+                        <li class="tasks-item">
+                            <img src="./img/svg/task-placeholder-image.svg" alt="task-placeholder-image" class="task-placeholder-image">
+                            <div class="tasks-item__container">
+                                <div class="tasks-item__heading-container">
+                                    <h1 class="tasks-item__heading heading">Просмотреть видео</h1>
+                                    <h3 class="heading tasks-item__balance tasks-item__balance-value">78</h3>
+                                    <span class="tasks-item__balance-star star"></span>
+                                </div>
+                                <p class="description tasks-item__description">перейти к описанию</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <script src="./js/main-page-slider.js"></script>
+</body>
+</html>

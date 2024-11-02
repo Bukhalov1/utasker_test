@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --backround-color: linear-gradient(97.27deg, #5EC1FF 5.35%, #18A7FF 122.51%);
+    --background-page-color: rgba(255, 255, 255, 1);
+    --heading-color: rgba(57, 57, 57, 1);
+    --description-color: rgba(57, 57, 57, 1);
+    --active-color: rgba(255, 255, 255, 1);
+}
+
+body{
+    max-width: 425px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: var(--backround-color);
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* max-width: 327px; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    min-height: calc(100vh - 70px);
+    height: fit-content;
+    background-color: var(--background-page-color);
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    padding: 25px 0px;
+}
+
+.section-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.heading{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+.description{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px; 
+    color: var(--description-color);
+    margin: 0;
+    /* padding: 0; */
+}
+
+.text-active{
+    color: var(--active-color);
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(246, 246, 246, 1);
+    box-shadow: 0px 4px 6.6px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* NAV-MENU */
+
+.nav-menu{
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 45px;
+    width: 291px;
+    height: 54px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6.199999809265137px);
+    border: none;
+    border-radius: 32px;
+}
+
+.nav-menu-btn{
+    width: 33.33%;
+    height: 100%;
+    padding: 7px 0px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    backdrop-filter: blur(6.199999809265137px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu-btn-active{
+    background: linear-gradient(108.6deg, #32A8F1 -67.1%, #5EC1FF 52.06%, #32A8F1 171.22%);
+    border: 1px solid rgba(50, 168, 241, 0.05);
+    box-shadow: 0px 0px 17.9px 2px rgba(56, 153, 214, 0.53);
+}
+
+.nav-menu-btn-heading{
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 10.97px;
+    margin-top: 4px;
+}
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__balance-container{
+    display: flex;
+    align-items: center;
+}
+
+.header__balance{
+    text-transform: none;
+}
+
+.header__balance-value{
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.star{
+    width: 15px;
+    height: 13px;
+    background-image: url(../img/svg/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.header__balance-star{
+    width: 22px;
+    height: 20px;
+}
+
+.header__active-container{
+    display: flex;
+    align-items: center;
+}
+
+.header__active-notifications, .header__active-profile{
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.header__active-notifications{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/svg/bell.svg);
+    margin-right: 4px;
+}
+
+.header__active-profile{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/avatar.png);
+}
