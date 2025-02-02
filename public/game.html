@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <title>uTasker - Игра</title>
+</head>
+<body>
+    <div class="nav-menu">
+        <button class="nav-menu-btn task-page">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="27" height="27" xlink:href="./img/svg/task-menu-logo.svg"></image>
+            </svg>
+            <h3 class="heading nav-menu-btn-heading">Задания</h3>
+        </button>
+        <button class="nav-menu-btn airdrop-page nav-menu-btn-active">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <image width="27" height="27" xlink:href="./img/svg/game-menu-logo.svg"></image>
+            </svg>                
+            <h3 class="heading nav-menu-btn-heading text-active">Airdrop</h3>
+        </button>
+        <!-- <a href="game.html" id="airdrop-link" style="display:none;"></a> -->
+        <button class="nav-menu-btn profile-page">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="27" height="27" xlink:href="./img/svg/profile-menu-logo.svg"></image>
+            </svg> 
+            <h3 class="heading nav-menu-btn-heading">Профиль</h3>
+        </button>
+    </div>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__balance-container">
+                <h3 class="heading header__balance text-active">Баланс:</h3>
+                <h3 class="heading header__balance header__balance-value text-active">135</h3>
+                <span class="header__balance-star star"></span>
+            </div>
+            <div class="header__active-container">
+                <button class="header__active-notifications"></button>
+                <button class="header__active-profile"></button>
+            </div>
+        </div>
+    </header>
+    <section class="section section-game">
+        <div class="container section-game__container">
+            <div class="section-heading-container section-game__heading-container">
+                <h1 class="section-game__heading heading">Игра</h1>
+            </div>
+	    <div class="section-game__btns">
+                <button class="section-game__btn text-active">Как играть?</button>
+                <button class="section-game__btn text-active">Миссии</button>
+	    </div>
+	    <div class="section-game__calculations">
+                <div class="section-game__calculation">
+	            <div class="section-game__your">
+		        <h3 class="description section-game__your-description">Вы:</h3>
+			<ul class="section-game__dots-list">
+			    <li class="section-game__dot dot-win"></li>
+			    <li class="section-game__dot dot-lose"></li>
+			    <li class="section-game__dot dot-win"></li>
+			    <li class="section-game__dot dot-win"></li>
+			    <li class="section-game__dot dot-lose"></li>
+			    <li class="section-game__dot dot-win"></li>
+			    <li class="section-game__dot dot-win"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			</ul>
+		    </div>
+                    <div class="section-game__opp">
+		        <h3 class="description section-game__opp-description">Оппонент:</h3>
+			<ul class="section-game__dots-list">
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			    <li class="section-game__dot"></li>
+			</ul>
+		    </div>
+		</div>
+		<div class="section-game__check">7/10</div>
+	    </div>
+	    <div class="section-game__game-contaiter">
+	        <h1 class="heading section-game__game-check">Счет: 5</h1>
+	        <img class="section-game__game-mask" src="./img/svg/mask-win.svg" alt="mask-win"></img>
+	    </div>
+	    <div class="section-game__game-btns">
+                <button id="btn-betray" class="section-game__game-btn text-active">Предать</button>
+                <button id="btn-be-friends" class="section-game__game-btn text-active">Дружить</button>
+	    </div>
+        </div>
+    </section>
+    <script src="./js/main-page.js"></script>
+</body>
+</html>
