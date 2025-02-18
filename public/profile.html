@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>uTasker - Профиль</title>
+</head>
+<body>
+    <div class="nav-menu">
+        <button class="nav-menu-btn task-page">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="27" height="27" xlink:href="./img/svg/task-menu-logo.svg"></image>
+            </svg>
+            <h3 class="heading nav-menu-btn-heading">Задания</h3>
+        </button>
+        <button class="nav-menu-btn airdrop-page">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <image width="27" height="27" xlink:href="./img/svg/game-menu-logo.svg"></image>
+            </svg>                
+            <h3 class="heading nav-menu-btn-heading">Airdrop</h3>
+        </button>
+        <!-- <a href="game.html" id="airdrop-link" style="display:none;"></a> -->
+        <button class="nav-menu-btn profile-page nav-menu-btn-active">
+            <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="27" height="27" xlink:href="./img/svg/profile-menu-logo.svg"></image>
+            </svg> 
+            <h3 class="heading nav-menu-btn-heading text-active">Профиль</h3>
+        </button>
+    </div>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__balance-container">
+                <h3 class="heading header__balance text-active">Баланс:</h3>
+                <h3 class="heading header__balance header__balance-value text-active">135</h3>
+                <span class="header__balance-star star"></span>
+            </div>
+            <div class="header__active-container">
+                <button class="header__active-notifications"></button>
+                <button class="header__active-profile"></button>
+            </div>
+        </div>
+    </header>
+    <section class="section section-profile">
+        <div class="container section-profile__container">
+            <div class="section-heading-container section-profile__heading-container">
+                <h1 class="section-profile__heading heading">Профиль</h1>
+            </div>
+            <div class="section-profile__option-container">
+            	<h3 class="description section-profile__item-heading">Отображаемое имя: </h3>
+		<div class="section-profile__input-container">
+    		   <input type="text" placeholder="Мария" class="btn section-profile__input-name"></>
+		   <button class="btn section-profile__btn-change"></button>
+		</div>
+		<button class="btn section-profile__btn-question"></button>
+            </div>
+	    <div class="section-profile__wallet-container">
+	        <h3 class="description section-profile__item-heading">Ваш кошелек:</h3>
+		<button class="btn section-profile__btn-wallet text-active">connect wallet +</button>
+	    </div>
+            <div class="section-profile__balance-active">
+	        <div class="header__balance-container">
+                    <h3 class="heading header__balance">Баланс:</h3>
+                    <h3 class="heading header__balance section-profile__balance-value">17064</h3>
+                    <span class="header__balance-star section-profile__balance-star star"></span>
+                </div>
+	        <div class="section-profile__balance-active-btns">
+		    <button id="withdrawal" class="btn section-profile__balance-active-btn">Вывод</button>
+		    <button id="top-up" class="btn section-profile__balance-active-btn">Пополнить</button>
+                </div>
+	    </div>
+            <div class="section-profile__option-container">
+            	<h3 class="description section-profile__item-heading">Друзья</h3>
+                <button class="btn section-profile__more"></button>
+            </div>
+            <div class="section-profile__option-container">
+            	<h3 class="description section-profile__item-heading">Мои задания</h3>
+                <button class="btn section-profile__more"></button>
+            </div>
+            <div class="section-profile__option-container">
+            	<h3 class="description section-profile__item-heading">История операций</h3>
+                <button class="btn section-profile__more"></button>
+            </div>
+            <button class="btn section-profile__btn-learning text-active">Обучение</button>
+            <div class="section-profile__option-container">
+            	<h3 class="description section-profile__item-heading">Ваши предпочтения</h3>
+                <button class="btn section-profile__btn-question"></button>
+            </div>
+            <ul class="section-profile__preferences-list">
+            	<li class="section-profile__preferences-item">Комментарии</li>
+            	<li class="section-profile__preferences-item preferences-item-active">Подписка</li>
+            	<li class="section-profile__preferences-item">Регистрация</li>
+            	<li class="section-profile__preferences-item preferences-item-active">Подписка</li>
+            	<li class="section-profile__preferences-item">Регистрация</li>
+            	<li class="section-profile__preferences-item">Комментарии</li>
+            	<li class="section-profile__preferences-item">Регистрация</li>
+            	<li class="section-profile__preferences-item">Комментарии</li>
+            	<li class="section-profile__preferences-item preferences-item-active">Подписка</li>
+            </ul>
+            <div class="section-profile__option-container">
+            	<h3 class="description section-profile__item-heading">Обратная связь/предложения</h3>
+                <button class="btn section-profile__more"></button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main-page.js"></script>
+</body>
+</html>

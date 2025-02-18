@@ -6,10 +6,12 @@ const port = 3005;
 // Указываем папку для статических файлов
 app.use(express.static('public'));
 
-// Главный маршрут
+// Главная страница
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/main.html'));
 });
+
+
 
 // Запускаем сервер
 app.listen(port, () => {
